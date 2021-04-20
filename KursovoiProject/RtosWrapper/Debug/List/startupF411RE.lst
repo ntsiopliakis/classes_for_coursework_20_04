@@ -1,0 +1,1883 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         20/Apr/2021  18:22:13
+# Copyright 1999-2019 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\startupF411RE.cpp
+#    Command line =
+#        -f C:\Users\D13C~1\AppData\Local\Temp\EW8712.tmp
+#        (C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\startupF411RE.cpp
+#        -lC
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Debug\List
+#        -lA
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Debug\List
+#        -o
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Debug\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\wrapper\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\wrapper\FreeRtos\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\include\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\portable\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\portable\Common\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\portable\IAR\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Rtos\FreeRtos\portable\MemMang\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\MyTasks\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Common\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\CMSIS\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Application\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Application\Diagnostic\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\GpioPort\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\IrqController\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Pin\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Registers\STM32F411\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Registers\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Port\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Atomic\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\Common\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\Common\Singleton\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\Common\RomObject\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\Port\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\Pin\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Application\Button\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Application\Led\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Application\Measurement\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\USART\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Registers\CortexM4\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\..\CortexLib\AbstractHardware\Registers\CortexM4\FieldValues\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\SPI\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\BME280Driver\
+#        -I
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\AHardware\EPDDriver\
+#        -On --c++ --no_exceptions --no_rtti)
+#    Locale       =  C
+#    List file    =
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Debug\List\startupF411RE.lst
+#    Object file  =
+#        C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\Debug\Obj\startupF411RE.o
+#
+###############################################################################
+
+C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\startupF411RE.cpp
+      1          /******************************************************************************
+Warning[Ms014]: some characters could not be correctly encoded in
+          "C:\Users\@@@@@@@@\Documents\MyIARprojects\KursovoiK_\RtosWrapper\De
+          bug\List\startupF411RE.s", and have been replaced with '@'. The first
+          such character has unicode code point 0x41d ("@")
+      2           *  FILENAME: startupF411RE.cpp
+      3           *  
+      4           * DESCRIPTION: Файл с векторами прерывания для Cortex-M. для С++.
+      5           * Поскольку почему-то в Cortex-M все обработчики должны по имени точно 
+      6           *  совпадать с имена в таблице векторов, а название метода из С++ класса 
+      7           * совпасть с такой таблицей со стандратными стартап файлами никак не может
+      8           * то вот приходиться такой же писать на С++. 
+      9           * Внимание!!!!!! Имена классов точно должны совпадать с именами у вас в проекте
+     10           * Можно изменить и сократить количество классов, если есть желание, например
+     11           *
+     12           * Copyright (c) 2018 by South Ural State University
+     13           * Author: Сергей Колодий
+     14           ******************************************************************************/
+     15          
+     16          #pragma language = extended
+     17          #pragma segment = "CSTACK"
+     18          #include "AHardware/IrqController/irqcontroller.hpp"
+     19          #include "Rtos/wrapper/rtos.hpp"
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char & std::array<char, 1024U>::operator[](size_t)
+   \                     _ZNSt5arrayIcLj1024EEixEj: (+1)
+   \        0x0   0x4408             ADD      R0,R0,R1
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char & std::array<char, 200U>::operator[](size_t)
+   \                     _ZNSt5arrayIcLj200EEixEj: (+1)
+   \        0x0   0x4408             ADD      R0,R0,R1
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_steady
+   \                     _ZNSt6chrono12system_clock9is_steadyE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_monotonic
+   \                     _ZNSt6chrono12system_clock12is_monotonicE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::steady_clock::is_steady
+   \                     _ZNSt6chrono12steady_clock9is_steadyE:
+   \        0x0   0x01               DC8 1
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::RtosWrapper::wHandleSvcInterrupt()
+   \                     _ZN9OsWrapper11RtosWrapper19wHandleSvcInterruptEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       vPortSVCHandler
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::RtosWrapper::wHandleSysTickInterrupt()
+   \                     _ZN9OsWrapper11RtosWrapper23wHandleSysTickInterruptEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       xPortSysTickHandler
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::Rtos::HandleSvcInterrupt()
+   \                     _ZN9OsWrapper4Rtos18HandleSvcInterruptEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN9OsWrapper11RtosWrapper19wHandleSvcInterruptEv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::Rtos::HandleSysTickInterrupt()
+   \                     _ZN9OsWrapper4Rtos22HandleSysTickInterruptEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN9OsWrapper11RtosWrapper23wHandleSysTickInterruptEv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+     20          #include "usartconfig.h"
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI22SPI1_CR2_RXNEIE_ValuesIN4SPI13CR2ELj6ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj0EE3SetIS3_vEEvv: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Set_0       ;; 0x40013004
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF030 0x0040      BICS     R0,R0,#0x40
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??Set_0:
+   \        0xC   0x4001'3004        DC32     0x40013004
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI21SPI1_CR2_TXEIE_ValuesIN4SPI13CR2ELj7ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj0EE3SetIS3_vEEvv: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Set_1       ;; 0x40013004
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF030 0x0080      BICS     R0,R0,#0x80
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??Set_1:
+   \        0xC   0x4001'3004        DC32     0x40013004
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI22SPI2_CR2_RXNEIE_ValuesIN4SPI23CR2ELj6ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj0EE3SetIS3_vEEvv: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Set_2       ;; 0x40003804
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF030 0x0040      BICS     R0,R0,#0x40
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??Set_2:
+   \        0xC   0x4000'3804        DC32     0x40003804
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI21SPI2_CR2_TXEIE_ValuesIN4SPI23CR2ELj7ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj0EE3SetIS3_vEEvv: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Set_3       ;; 0x40003804
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF030 0x0080      BICS     R0,R0,#0x80
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??Set_3:
+   \        0xC   0x4000'3804        DC32     0x40003804
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI20USART2_CR1_TE_ValuesIN6USART23CR1ELj3ELj1E13ReadWriteModeNS1_13USART2CR1BaseEES4_Lj0EE3SetIS3_vEEvv: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Set_4       ;; 0x4000440c
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF030 0x0008      BICS     R0,R0,#0x8
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??Set_4:
+   \        0xC   0x4000'440C        DC32     0x4000440c
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void FieldValueBase<USART2_CR1_TXEIE_Values<USART2::CR1, 7U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI23USART2_CR1_TXEIE_ValuesIN6USART23CR1ELj7ELj1E13ReadWriteModeNS1_13USART2CR1BaseEES4_Lj0EE3SetIS3_vEEvv: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Set_5       ;; 0x4000440c
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF030 0x0080      BICS     R0,R0,#0x80
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??Set_5:
+   \        0xC   0x4000'440C        DC32     0x4000440c
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<USART2_SR_RXNE_Values<USART2::SR, 5U, 1U, ReadWriteMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI21USART2_SR_RXNE_ValuesIN6USART22SRELj5ELj1E13ReadWriteModeNS1_12USART2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_0     ;; 0x40004400
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0940             LSRS     R0,R0,#+5
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_0:
+   \        0xC   0x4000'4400        DC32     0x40004400
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 1U>::IsSet<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI20USART2_CR1_TE_ValuesIN6USART23CR1ELj3ELj1E13ReadWriteModeNS1_13USART2CR1BaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_1     ;; 0x4000440c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x08C0             LSRS     R0,R0,#+3
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_1:
+   \        0xC   0x4000'440C        DC32     0x4000440c
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<USART2_SR_TXE_Values<USART2::SR, 7U, 1U, ReadMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI20USART2_SR_TXE_ValuesIN6USART22SRELj7ELj1E8ReadModeNS1_12USART2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_2     ;; 0x40004400
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x09C0             LSRS     R0,R0,#+7
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_2:
+   \        0xC   0x4000'4400        DC32     0x40004400
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI22SPI1_CR2_RXNEIE_ValuesIN4SPI13CR2ELj6ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_3     ;; 0x40013004
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0980             LSRS     R0,R0,#+6
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_3:
+   \        0xC   0x4001'3004        DC32     0x40013004
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI1_SR_RXNE_Values<SPI1::SR, 0U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI19SPI1_SR_RXNE_ValuesIN4SPI12SRELj0ELj1E8ReadModeNS1_10SPI1SRBaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_4     ;; 0x40013008
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0x8   0x4770             BX       LR               ;; return
+   \        0xA   0xBF00             Nop      
+   \                     ??IsSet_4:
+   \        0xC   0x4001'3008        DC32     0x40013008
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI21SPI1_CR2_TXEIE_ValuesIN4SPI13CR2ELj7ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_5     ;; 0x40013004
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x09C0             LSRS     R0,R0,#+7
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_5:
+   \        0xC   0x4001'3004        DC32     0x40013004
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI1_SR_TXE_Values<SPI1::SR, 1U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI18SPI1_SR_TXE_ValuesIN4SPI12SRELj1ELj1E8ReadModeNS1_10SPI1SRBaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_6     ;; 0x40013008
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0840             LSRS     R0,R0,#+1
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_6:
+   \        0xC   0x4001'3008        DC32     0x40013008
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI1_SR_BSY_Values<SPI1::SR, 7U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 0U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI18SPI1_SR_BSY_ValuesIN4SPI12SRELj7ELj1E8ReadModeNS1_10SPI1SRBaseEES4_Lj0EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4804             LDR.N    R0,??IsSet_7     ;; 0x40013008
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x09C0             LSRS     R0,R0,#+7
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0xF090 0x0001      EORS     R0,R0,#0x1
+   \        0xE   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \       0x10   0x4770             BX       LR               ;; return
+   \       0x12   0xBF00             Nop      
+   \                     ??IsSet_7:
+   \       0x14   0x4001'3008        DC32     0x40013008
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI22SPI2_CR2_RXNEIE_ValuesIN4SPI23CR2ELj6ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_8     ;; 0x40003804
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0980             LSRS     R0,R0,#+6
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_8:
+   \        0xC   0x4000'3804        DC32     0x40003804
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI2_SR_RXNE_Values<SPI2::SR, 0U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI19SPI2_SR_RXNE_ValuesIN4SPI22SRELj0ELj1E8ReadModeNS1_10SPI2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_9     ;; 0x40003808
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0x8   0x4770             BX       LR               ;; return
+   \        0xA   0xBF00             Nop      
+   \                     ??IsSet_9:
+   \        0xC   0x4000'3808        DC32     0x40003808
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+   \                     _ZN14FieldValueBaseI21SPI2_CR2_TXEIE_ValuesIN4SPI23CR2ELj7ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_10    ;; 0x40003804
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x09C0             LSRS     R0,R0,#+7
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_10:
+   \        0xC   0x4000'3804        DC32     0x40003804
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI2_SR_TXE_Values<SPI2::SR, 1U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI18SPI2_SR_TXE_ValuesIN4SPI22SRELj1ELj1E8ReadModeNS1_10SPI2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4802             LDR.N    R0,??IsSet_11    ;; 0x40003808
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0840             LSRS     R0,R0,#+1
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR               ;; return
+   \                     ??IsSet_11:
+   \        0xC   0x4000'3808        DC32     0x40003808
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp bool FieldValueBase<SPI2_SR_BSY_Values<SPI2::SR, 7U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 0U>::IsSet<ReadMode, void>()
+   \                     _ZN14FieldValueBaseI18SPI2_SR_BSY_ValuesIN4SPI22SRELj7ELj1E8ReadModeNS1_10SPI2SRBaseEES4_Lj0EE5IsSetIS3_vEEbv: (+1)
+   \        0x0   0x4804             LDR.N    R0,??IsSet_12    ;; 0x40003808
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x09C0             LSRS     R0,R0,#+7
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0xF090 0x0001      EORS     R0,R0,#0x1
+   \        0xE   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \       0x10   0x4770             BX       LR               ;; return
+   \       0x12   0xBF00             Nop      
+   \                     ??IsSet_12:
+   \       0x14   0x4000'3808        DC32     0x40003808
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void RegisterBase<1073759236U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+   \                     _ZN12RegisterBaseILj1073759236ELj32E13ReadWriteModeE5WriteIS0_vEEvj: (+1)
+   \        0x0   0x4901             LDR.N    R1,??Write_0     ;; 0x40004404
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Write_0:
+   \        0x8   0x4000'4404        DC32     0x40004404
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void RegisterBase<1073756172U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+   \                     _ZN12RegisterBaseILj1073756172ELj32E13ReadWriteModeE5WriteIS0_vEEvj: (+1)
+   \        0x0   0x4901             LDR.N    R1,??Write_1     ;; 0x4000380c
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Write_1:
+   \        0x8   0x4000'380C        DC32     0x4000380c
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void RegisterBase<1073819660U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+   \                     _ZN12RegisterBaseILj1073819660ELj32E13ReadWriteModeE5WriteIS0_vEEvj: (+1)
+   \        0x0   0x4901             LDR.N    R1,??Write_2     ;; 0x4001300c
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Write_2:
+   \        0x8   0x4001'300C        DC32     0x4001300c
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp uint32_t RegisterBase<1073759236U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+   \                     _ZN12RegisterBaseILj1073759236ELj32E13ReadWriteModeE3GetIS0_vEEjv: (+1)
+   \        0x0   0x4801             LDR.N    R0,??Get_0       ;; 0x40004404
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Get_0:
+   \        0x8   0x4000'4404        DC32     0x40004404
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp uint32_t RegisterBase<1073756172U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+   \                     _ZN12RegisterBaseILj1073756172ELj32E13ReadWriteModeE3GetIS0_vEEjv: (+1)
+   \        0x0   0x4801             LDR.N    R0,??Get_1       ;; 0x4000380c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Get_1:
+   \        0x8   0x4000'380C        DC32     0x4000380c
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp uint32_t RegisterBase<1073819660U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+   \                     _ZN12RegisterBaseILj1073819660ELj32E13ReadWriteModeE3GetIS0_vEEjv: (+1)
+   \        0x0   0x4801             LDR.N    R0,??Get_2       ;; 0x4001300c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Get_2:
+   \        0x8   0x4001'300C        DC32     0x4001300c
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void USART<USART2, bluetoothTransceiver>::SendByte(uint8_t)
+   \                     _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE8SendByteEh: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x8   0x....'....        BL       _ZN12RegisterBaseILj1073759236ELj32E13ReadWriteModeE5WriteIS0_vEEvj
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp uint8_t USART<USART2, bluetoothTransceiver>::ReadByte()
+   \                     _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE8ReadByteEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN12RegisterBaseILj1073759236ELj32E13ReadWriteModeE3GetIS0_vEEjv
+   \        0x6   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void USART<USART2, bluetoothTransceiver>::TransmiteDisable()
+   \                     _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE16TransmiteDisableEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI20USART2_CR1_TE_ValuesIN6USART23CR1ELj3ELj1E13ReadWriteModeNS1_13USART2CR1BaseEES4_Lj0EE3SetIS3_vEEvv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void USART<USART2, bluetoothTransceiver>::TransmiteBufEmptyInterruptDisable()
+   \                     _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE33TransmiteBufEmptyInterruptDisableEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI23USART2_CR1_TXEIE_ValuesIN6USART23CR1ELj7ELj1E13ReadWriteModeNS1_13USART2CR1BaseEES4_Lj0EE3SetIS3_vEEvv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void USART<USART2, bluetoothTransceiver>::UsartInterruptHandler()
+   \                     _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE21UsartInterruptHandlerEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI21USART2_SR_RXNE_ValuesIN6USART22SRELj5ELj1E13ReadWriteModeNS1_12USART2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD002             BEQ.N    ??UsartInterruptHandler_1
+   \        0xA   0x4807             LDR.N    R0,??UsartInterruptHandler_0
+   \        0xC   0x....'....        BL       _ZN11usartDriverI6usart2E17OnNextByteReceiveEv
+   \                     ??UsartInterruptHandler_1: (+1)
+   \       0x10   0x....'....        BL       _ZN14FieldValueBaseI20USART2_CR1_TE_ValuesIN6USART23CR1ELj3ELj1E13ReadWriteModeNS1_13USART2CR1BaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD006             BEQ.N    ??UsartInterruptHandler_2
+   \       0x18   0x....'....        BL       _ZN14FieldValueBaseI20USART2_SR_TXE_ValuesIN6USART22SRELj7ELj1E8ReadModeNS1_12USART2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD002             BEQ.N    ??UsartInterruptHandler_2
+   \       0x20   0x4801             LDR.N    R0,??UsartInterruptHandler_0
+   \       0x22   0x....'....        BL       _ZN11usartDriverI6usart2E19OnNextByteTransmiteEv
+   \                     ??UsartInterruptHandler_2: (+1)
+   \       0x26   0xBD01             POP      {R0,PC}          ;; return
+   \                     ??UsartInterruptHandler_0:
+   \       0x28   0x....'....        DC32     bluetoothTransceiver
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp usartDriver<usart2>::usartDriver()
+   \                     _ZN11usartDriverI6usart2EC1Ev: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0xF8C0 0x1800      STR      R1,[R0, #+2048]
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0xF8C0 0x1804      STR      R1,[R0, #+2052]
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0xF880 0x1808      STRB     R1,[R0, #+2056]
+   \       0x12   0x2100             MOVS     R1,#+0
+   \       0x14   0xF880 0x1809      STRB     R1,[R0, #+2057]
+   \       0x18   0x213F             MOVS     R1,#+63
+   \       0x1A   0xF880 0x180A      STRB     R1,[R0, #+2058]
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0xF8C0 0x180C      STR      R1,[R0, #+2060]
+   \       0x24   0x2100             MOVS     R1,#+0
+   \       0x26   0xF8C0 0x1810      STR      R1,[R0, #+2064]
+   \       0x2A   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void usartDriver<usart2>::OnNextByteTransmite()
+   \                     _ZN11usartDriverI6usart2E19OnNextByteTransmiteEv: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0xF8D4 0x0810      LDR      R0,[R4, #+2064]
+   \        0x8   0xF8D4 0x1800      LDR      R1,[R4, #+2048]
+   \        0xC   0x1E49             SUBS     R1,R1,#+1
+   \        0xE   0x4288             CMP      R0,R1
+   \       0x10   0xD20D             BCS.N    ??OnNextByteTransmite_0
+   \       0x12   0xF8D4 0x0810      LDR      R0,[R4, #+2064]
+   \       0x16   0x1C40             ADDS     R0,R0,#+1
+   \       0x18   0xF8C4 0x0810      STR      R0,[R4, #+2064]
+   \       0x1C   0xF8D4 0x1810      LDR      R1,[R4, #+2064]
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x....'....        BL       _ZNSt5arrayIcLj1024EEixEj
+   \       0x26   0x7800             LDRB     R0,[R0, #+0]
+   \       0x28   0x....'....        BL       _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE8SendByteEh
+   \       0x2C   0xE011             B.N      ??OnNextByteTransmite_1
+   \                     ??OnNextByteTransmite_0: (+1)
+   \       0x2E   0xF8D4 0x1810      LDR      R1,[R4, #+2064]
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x....'....        BL       _ZNSt5arrayIcLj1024EEixEj
+   \       0x38   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3A   0x....'....        BL       _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE8SendByteEh
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0xF8C4 0x0810      STR      R0,[R4, #+2064]
+   \       0x44   0x....'....        BL       _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE16TransmiteDisableEv
+   \       0x48   0x....'....        BL       _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE33TransmiteBufEmptyInterruptDisableEv
+   \       0x4C   0x2001             MOVS     R0,#+1
+   \       0x4E   0xF884 0x0809      STRB     R0,[R4, #+2057]
+   \                     ??OnNextByteTransmite_1: (+1)
+   \       0x52   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void usartDriver<usart2>::OnNextByteReceive()
+   \                     _ZN11usartDriverI6usart2E17OnNextByteReceiveEv: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x....'....        BL       _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE8ReadByteEv
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0xF894 0x0808      LDRB     R0,[R4, #+2056]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD128             BNE.N    ??OnNextByteReceive_2
+   \       0x12   0xF8D4 0x180C      LDR      R1,[R4, #+2060]
+   \       0x16   0x1C48             ADDS     R0,R1,#+1
+   \       0x18   0xF8C4 0x080C      STR      R0,[R4, #+2060]
+   \       0x1C   0xF514 0x6080      ADDS     R0,R4,#+1024
+   \       0x20   0x....'....        BL       _ZNSt5arrayIcLj1024EEixEj
+   \       0x24   0x7005             STRB     R5,[R0, #+0]
+   \       0x26   0xF8D4 0x180C      LDR      R1,[R4, #+2060]
+   \       0x2A   0x1E49             SUBS     R1,R1,#+1
+   \       0x2C   0xF514 0x6080      ADDS     R0,R4,#+1024
+   \       0x30   0x....'....        BL       _ZNSt5arrayIcLj1024EEixEj
+   \       0x34   0x7800             LDRB     R0,[R0, #+0]
+   \       0x36   0x283F             CMP      R0,#+63
+   \       0x38   0xD114             BNE.N    ??OnNextByteReceive_2
+   \       0x3A   0xF8D4 0x180C      LDR      R1,[R4, #+2060]
+   \       0x3E   0x1C48             ADDS     R0,R1,#+1
+   \       0x40   0xF8C4 0x080C      STR      R0,[R4, #+2060]
+   \       0x44   0xF514 0x6080      ADDS     R0,R4,#+1024
+   \       0x48   0x....'....        BL       _ZNSt5arrayIcLj1024EEixEj
+   \       0x4C   0x2100             MOVS     R1,#+0
+   \       0x4E   0x7001             STRB     R1,[R0, #+0]
+   \       0x50   0xF8D4 0x080C      LDR      R0,[R4, #+2060]
+   \       0x54   0xF8C4 0x0804      STR      R0,[R4, #+2052]
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0xF8C4 0x080C      STR      R0,[R4, #+2060]
+   \       0x5E   0x2001             MOVS     R0,#+1
+   \       0x60   0xF884 0x0808      STRB     R0,[R4, #+2056]
+   \                     ??OnNextByteReceive_2: (+1)
+   \       0x64   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __intrinsic __interwork __vfp void __sti__routine()
+   \                     __sti__routine: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....             LDR.N    R1,??DataTable0
+   \        0x4   0x7808             LDRB     R0,[R1, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD104             BNE.N    ??__sti__routine_0
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0x7008             STRB     R0,[R1, #+0]
+   \        0xE   0x....             LDR.N    R0,??DataTable0_1
+   \       0x10   0x....'....        BL       _ZN11usartDriverI6usart2EC1Ev
+   \                     ??__sti__routine_0: (+1)
+   \       0x14   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .bss, align 4
+   \   __absolute usartDriver<usart2> bluetoothTransceiver
+   \                     bluetoothTransceiver:
+   \        0x0                      DS8 2'068
+     21          #include "spiconfig.h"
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SPI<SPI2, spi2Transceiver>::SendByte(char)
+   \                     _ZN3SPII4SPI2L_Z15spi2TransceiverEE8SendByteEc: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x8   0x....'....        BL       _ZN12RegisterBaseILj1073756172ELj32E13ReadWriteModeE5WriteIS0_vEEvj
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SPI<SPI1, spi1Transceiver>::SendByte(char)
+   \                     _ZN3SPII4SPI1L_Z15spi1TransceiverEE8SendByteEc: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x8   0x....'....        BL       _ZN12RegisterBaseILj1073819660ELj32E13ReadWriteModeE5WriteIS0_vEEvj
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char SPI<SPI2, spi2Transceiver>::ReadByte()
+   \                     _ZN3SPII4SPI2L_Z15spi2TransceiverEE8ReadByteEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN12RegisterBaseILj1073756172ELj32E13ReadWriteModeE3GetIS0_vEEjv
+   \        0x6   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char SPI<SPI1, spi1Transceiver>::ReadByte()
+   \                     _ZN3SPII4SPI1L_Z15spi1TransceiverEE8ReadByteEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN12RegisterBaseILj1073819660ELj32E13ReadWriteModeE3GetIS0_vEEjv
+   \        0x6   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SPI<SPI2, spi2Transceiver>::TransmiteBufEmptyInterruptDisable()
+   \                     _ZN3SPII4SPI2L_Z15spi2TransceiverEE33TransmiteBufEmptyInterruptDisableEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI21SPI2_CR2_TXEIE_ValuesIN4SPI23CR2ELj7ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj0EE3SetIS3_vEEvv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SPI<SPI1, spi1Transceiver>::TransmiteBufEmptyInterruptDisable()
+   \                     _ZN3SPII4SPI1L_Z15spi1TransceiverEE33TransmiteBufEmptyInterruptDisableEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI21SPI1_CR2_TXEIE_ValuesIN4SPI13CR2ELj7ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj0EE3SetIS3_vEEvv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SPI<SPI2, spi2Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+   \                     _ZN3SPII4SPI2L_Z15spi2TransceiverEE34ReceiveBufNotEmptyInterruptDisableEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI22SPI2_CR2_RXNEIE_ValuesIN4SPI23CR2ELj6ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj0EE3SetIS3_vEEvv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SPI<SPI1, spi1Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+   \                     _ZN3SPII4SPI1L_Z15spi1TransceiverEE34ReceiveBufNotEmptyInterruptDisableEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI22SPI1_CR2_RXNEIE_ValuesIN4SPI13CR2ELj6ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj0EE3SetIS3_vEEvv
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp bool SPI<SPI2, spi2Transceiver>::TransmittionCompleted()
+   \                     _ZN3SPII4SPI2L_Z15spi2TransceiverEE21TransmittionCompletedEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI18SPI2_SR_BSY_ValuesIN4SPI22SRELj7ELj1E8ReadModeNS1_10SPI2SRBaseEES4_Lj0EE5IsSetIS3_vEEbv
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp bool SPI<SPI1, spi1Transceiver>::TransmittionCompleted()
+   \                     _ZN3SPII4SPI1L_Z15spi1TransceiverEE21TransmittionCompletedEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI18SPI1_SR_BSY_ValuesIN4SPI12SRELj7ELj1E8ReadModeNS1_10SPI1SRBaseEES4_Lj0EE5IsSetIS3_vEEbv
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void SPI<SPI2, spi2Transceiver>::SpiInterruptHandler()
+   \                     _ZN3SPII4SPI2L_Z15spi2TransceiverEE19SpiInterruptHandlerEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI22SPI2_CR2_RXNEIE_ValuesIN4SPI23CR2ELj6ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD006             BEQ.N    ??SpiInterruptHandler_2
+   \        0xA   0x....'....        BL       _ZN14FieldValueBaseI19SPI2_SR_RXNE_ValuesIN4SPI22SRELj0ELj1E8ReadModeNS1_10SPI2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD002             BEQ.N    ??SpiInterruptHandler_2
+   \       0x12   0x4807             LDR.N    R0,??SpiInterruptHandler_0
+   \       0x14   0x....'....        BL       _ZN9SpiDriverI4spi2E17OnNextByteReceiveEv
+   \                     ??SpiInterruptHandler_2: (+1)
+   \       0x18   0x....'....        BL       _ZN14FieldValueBaseI21SPI2_CR2_TXEIE_ValuesIN4SPI23CR2ELj7ELj1E13ReadWriteModeNS1_11SPI2CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD006             BEQ.N    ??SpiInterruptHandler_3
+   \       0x20   0x....'....        BL       _ZN14FieldValueBaseI18SPI2_SR_TXE_ValuesIN4SPI22SRELj1ELj1E8ReadModeNS1_10SPI2SRBaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD002             BEQ.N    ??SpiInterruptHandler_3
+   \       0x28   0x4801             LDR.N    R0,??SpiInterruptHandler_0
+   \       0x2A   0x....'....        BL       _ZN9SpiDriverI4spi2E19OnNextByteTransmiteEv
+   \                     ??SpiInterruptHandler_3: (+1)
+   \       0x2E   0xBD01             POP      {R0,PC}          ;; return
+   \                     ??SpiInterruptHandler_0:
+   \       0x30   0x....'....        DC32     spi2Transceiver
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void SPI<SPI1, spi1Transceiver>::SpiInterruptHandler()
+   \                     _ZN3SPII4SPI1L_Z15spi1TransceiverEE19SpiInterruptHandlerEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN14FieldValueBaseI22SPI1_CR2_RXNEIE_ValuesIN4SPI13CR2ELj6ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD006             BEQ.N    ??SpiInterruptHandler_4
+   \        0xA   0x....'....        BL       _ZN14FieldValueBaseI19SPI1_SR_RXNE_ValuesIN4SPI12SRELj0ELj1E8ReadModeNS1_10SPI1SRBaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD002             BEQ.N    ??SpiInterruptHandler_4
+   \       0x12   0x4807             LDR.N    R0,??SpiInterruptHandler_1
+   \       0x14   0x....'....        BL       _ZN9SpiDriverI4spi1E17OnNextByteReceiveEv
+   \                     ??SpiInterruptHandler_4: (+1)
+   \       0x18   0x....'....        BL       _ZN14FieldValueBaseI21SPI1_CR2_TXEIE_ValuesIN4SPI13CR2ELj7ELj1E13ReadWriteModeNS1_11SPI1CR2BaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD006             BEQ.N    ??SpiInterruptHandler_5
+   \       0x20   0x....'....        BL       _ZN14FieldValueBaseI18SPI1_SR_TXE_ValuesIN4SPI12SRELj1ELj1E8ReadModeNS1_10SPI1SRBaseEES4_Lj1EE5IsSetIS3_vEEbv
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD002             BEQ.N    ??SpiInterruptHandler_5
+   \       0x28   0x4801             LDR.N    R0,??SpiInterruptHandler_1
+   \       0x2A   0x....'....        BL       _ZN9SpiDriverI4spi1E19OnNextByteTransmiteEv
+   \                     ??SpiInterruptHandler_5: (+1)
+   \       0x2E   0xBD01             POP      {R0,PC}          ;; return
+   \                     ??SpiInterruptHandler_1:
+   \       0x30   0x....'....        DC32     spi1Transceiver
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SpiDriver<spi2>::OnNextByteTransmite()
+   \                     _ZN9SpiDriverI4spi2E19OnNextByteTransmiteEv: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0xF8D4 0x01A0      LDR      R0,[R4, #+416]
+   \        0x8   0xF8D4 0x1190      LDR      R1,[R4, #+400]
+   \        0xC   0x4288             CMP      R0,R1
+   \        0xE   0xD303             BCC.N    ??OnNextByteTransmite_2
+   \       0x10   0xF894 0x0198      LDRB     R0,[R4, #+408]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD11F             BNE.N    ??OnNextByteTransmite_3
+   \                     ??OnNextByteTransmite_2: (+1)
+   \       0x18   0xF8D4 0x01A0      LDR      R0,[R4, #+416]
+   \       0x1C   0xF8D4 0x1190      LDR      R1,[R4, #+400]
+   \       0x20   0x4288             CMP      R0,R1
+   \       0x22   0xD30D             BCC.N    ??OnNextByteTransmite_4
+   \       0x24   0xF8D4 0x11A0      LDR      R1,[R4, #+416]
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x2E   0x0005             MOVS     R5,R0
+   \       0x30   0xF8D4 0x11A0      LDR      R1,[R4, #+416]
+   \       0x34   0x1E49             SUBS     R1,R1,#+1
+   \       0x36   0x0020             MOVS     R0,R4
+   \       0x38   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0x7028             STRB     R0,[R5, #+0]
+   \                     ??OnNextByteTransmite_4: (+1)
+   \       0x40   0xF8D4 0x11A0      LDR      R1,[R4, #+416]
+   \       0x44   0x1C48             ADDS     R0,R1,#+1
+   \       0x46   0xF8C4 0x01A0      STR      R0,[R4, #+416]
+   \       0x4A   0x0020             MOVS     R0,R4
+   \       0x4C   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x50   0x7800             LDRB     R0,[R0, #+0]
+   \       0x52   0x....'....        BL       _ZN3SPII4SPI2L_Z15spi2TransceiverEE8SendByteEc
+   \       0x56   0xE00F             B.N      ??OnNextByteTransmite_5
+   \                     ??OnNextByteTransmite_3: (+1)
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0xF8C4 0x01A0      STR      R0,[R4, #+416]
+   \       0x5E   0x....'....        BL       _ZN3SPII4SPI2L_Z15spi2TransceiverEE33TransmiteBufEmptyInterruptDisableEv
+   \       0x62   0xF8D4 0x0194      LDR      R0,[R4, #+404]
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD103             BNE.N    ??OnNextByteTransmite_6
+   \                     ??OnNextByteTransmite_7: (+1)
+   \       0x6A   0x....'....        BL       _ZN3SPII4SPI2L_Z15spi2TransceiverEE21TransmittionCompletedEv
+   \       0x6E   0x2800             CMP      R0,#+0
+   \       0x70   0xD0FB             BEQ.N    ??OnNextByteTransmite_7
+   \                     ??OnNextByteTransmite_6: (+1)
+   \       0x72   0x2001             MOVS     R0,#+1
+   \       0x74   0xF884 0x0199      STRB     R0,[R4, #+409]
+   \                     ??OnNextByteTransmite_5: (+1)
+   \       0x78   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void SpiDriver<spi1>::OnNextByteTransmite()
+   \                     _ZN9SpiDriverI4spi1E19OnNextByteTransmiteEv: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0xF8D4 0x01A0      LDR      R0,[R4, #+416]
+   \        0x8   0xF8D4 0x1190      LDR      R1,[R4, #+400]
+   \        0xC   0x4288             CMP      R0,R1
+   \        0xE   0xD303             BCC.N    ??OnNextByteTransmite_8
+   \       0x10   0xF894 0x0198      LDRB     R0,[R4, #+408]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD11F             BNE.N    ??OnNextByteTransmite_9
+   \                     ??OnNextByteTransmite_8: (+1)
+   \       0x18   0xF8D4 0x01A0      LDR      R0,[R4, #+416]
+   \       0x1C   0xF8D4 0x1190      LDR      R1,[R4, #+400]
+   \       0x20   0x4288             CMP      R0,R1
+   \       0x22   0xD30D             BCC.N    ??OnNextByteTransmite_10
+   \       0x24   0xF8D4 0x11A0      LDR      R1,[R4, #+416]
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x2E   0x0005             MOVS     R5,R0
+   \       0x30   0xF8D4 0x11A0      LDR      R1,[R4, #+416]
+   \       0x34   0x1E49             SUBS     R1,R1,#+1
+   \       0x36   0x0020             MOVS     R0,R4
+   \       0x38   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0x7028             STRB     R0,[R5, #+0]
+   \                     ??OnNextByteTransmite_10: (+1)
+   \       0x40   0xF8D4 0x11A0      LDR      R1,[R4, #+416]
+   \       0x44   0x1C48             ADDS     R0,R1,#+1
+   \       0x46   0xF8C4 0x01A0      STR      R0,[R4, #+416]
+   \       0x4A   0x0020             MOVS     R0,R4
+   \       0x4C   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x50   0x7800             LDRB     R0,[R0, #+0]
+   \       0x52   0x....'....        BL       _ZN3SPII4SPI1L_Z15spi1TransceiverEE8SendByteEc
+   \       0x56   0xE00F             B.N      ??OnNextByteTransmite_11
+   \                     ??OnNextByteTransmite_9: (+1)
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0xF8C4 0x01A0      STR      R0,[R4, #+416]
+   \       0x5E   0x....'....        BL       _ZN3SPII4SPI1L_Z15spi1TransceiverEE33TransmiteBufEmptyInterruptDisableEv
+   \       0x62   0xF8D4 0x0194      LDR      R0,[R4, #+404]
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD103             BNE.N    ??OnNextByteTransmite_12
+   \                     ??OnNextByteTransmite_13: (+1)
+   \       0x6A   0x....'....        BL       _ZN3SPII4SPI1L_Z15spi1TransceiverEE21TransmittionCompletedEv
+   \       0x6E   0x2800             CMP      R0,#+0
+   \       0x70   0xD0FB             BEQ.N    ??OnNextByteTransmite_13
+   \                     ??OnNextByteTransmite_12: (+1)
+   \       0x72   0x2001             MOVS     R0,#+1
+   \       0x74   0xF884 0x0199      STRB     R0,[R4, #+409]
+   \                     ??OnNextByteTransmite_11: (+1)
+   \       0x78   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void SpiDriver<spi2>::OnNextByteReceive()
+   \                     _ZN9SpiDriverI4spi2E17OnNextByteReceiveEv: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x....'....        BL       _ZN3SPII4SPI2L_Z15spi2TransceiverEE8ReadByteEv
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0xF894 0x0198      LDRB     R0,[R4, #+408]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD120             BNE.N    ??OnNextByteReceive_3
+   \       0x12   0x4E11             LDR.N    R6,??OnNextByteReceive_0
+   \       0x14   0x7830             LDRB     R0,[R6, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD11A             BNE.N    ??OnNextByteReceive_4
+   \       0x1A   0xF8D4 0x119C      LDR      R1,[R4, #+412]
+   \       0x1E   0x1C48             ADDS     R0,R1,#+1
+   \       0x20   0xF8C4 0x019C      STR      R0,[R4, #+412]
+   \       0x24   0xF114 0x00C8      ADDS     R0,R4,#+200
+   \       0x28   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x2C   0x7005             STRB     R5,[R0, #+0]
+   \       0x2E   0xF8D4 0x019C      LDR      R0,[R4, #+412]
+   \       0x32   0xF8D4 0x1194      LDR      R1,[R4, #+404]
+   \       0x36   0x4288             CMP      R0,R1
+   \       0x38   0xD10C             BNE.N    ??OnNextByteReceive_3
+   \       0x3A   0x....'....        BL       _ZN3SPII4SPI2L_Z15spi2TransceiverEE34ReceiveBufNotEmptyInterruptDisableEv
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0xF8C4 0x019C      STR      R0,[R4, #+412]
+   \       0x44   0x2001             MOVS     R0,#+1
+   \       0x46   0xF884 0x0198      STRB     R0,[R4, #+408]
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0x7030             STRB     R0,[R6, #+0]
+   \       0x4E   0xE001             B.N      ??OnNextByteReceive_3
+   \                     ??OnNextByteReceive_4: (+1)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0x7030             STRB     R0,[R6, #+0]
+   \                     ??OnNextByteReceive_3: (+1)
+   \       0x54   0xBD70             POP      {R4-R6,PC}       ;; return
+   \       0x56   0xBF00             Nop      
+   \                     ??OnNextByteReceive_0:
+   \       0x58   0x....'....        DC32     _ZZN9SpiDriverI4spi2E17OnNextByteReceiveEvE7isfirst
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void SpiDriver<spi1>::OnNextByteReceive()
+   \                     _ZN9SpiDriverI4spi1E17OnNextByteReceiveEv: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x....'....        BL       _ZN3SPII4SPI1L_Z15spi1TransceiverEE8ReadByteEv
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0xF894 0x0198      LDRB     R0,[R4, #+408]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD120             BNE.N    ??OnNextByteReceive_5
+   \       0x12   0x4E11             LDR.N    R6,??OnNextByteReceive_1
+   \       0x14   0x7830             LDRB     R0,[R6, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD11A             BNE.N    ??OnNextByteReceive_6
+   \       0x1A   0xF8D4 0x119C      LDR      R1,[R4, #+412]
+   \       0x1E   0x1C48             ADDS     R0,R1,#+1
+   \       0x20   0xF8C4 0x019C      STR      R0,[R4, #+412]
+   \       0x24   0xF114 0x00C8      ADDS     R0,R4,#+200
+   \       0x28   0x....'....        BL       _ZNSt5arrayIcLj200EEixEj
+   \       0x2C   0x7005             STRB     R5,[R0, #+0]
+   \       0x2E   0xF8D4 0x019C      LDR      R0,[R4, #+412]
+   \       0x32   0xF8D4 0x1194      LDR      R1,[R4, #+404]
+   \       0x36   0x4288             CMP      R0,R1
+   \       0x38   0xD10C             BNE.N    ??OnNextByteReceive_5
+   \       0x3A   0x....'....        BL       _ZN3SPII4SPI1L_Z15spi1TransceiverEE34ReceiveBufNotEmptyInterruptDisableEv
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0xF8C4 0x019C      STR      R0,[R4, #+412]
+   \       0x44   0x2001             MOVS     R0,#+1
+   \       0x46   0xF884 0x0198      STRB     R0,[R4, #+408]
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0x7030             STRB     R0,[R6, #+0]
+   \       0x4E   0xE001             B.N      ??OnNextByteReceive_5
+   \                     ??OnNextByteReceive_6: (+1)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0x7030             STRB     R0,[R6, #+0]
+   \                     ??OnNextByteReceive_5: (+1)
+   \       0x54   0xBD70             POP      {R4-R6,PC}       ;; return
+   \       0x56   0xBF00             Nop      
+   \                     ??OnNextByteReceive_1:
+   \       0x58   0x....'....        DC32     _ZZN9SpiDriverI4spi1E17OnNextByteReceiveEvE7isfirst
+
+   \                                 In section .data, align 1
+   \   __absolute bool isfirst
+   \                     _ZZN9SpiDriverI4spi2E17OnNextByteReceiveEvE7isfirst:
+   \        0x0   0x01               DC8 1
+
+   \                                 In section .data, align 1
+   \   __absolute bool isfirst
+   \                     _ZZN9SpiDriverI4spi1E17OnNextByteReceiveEvE7isfirst:
+   \        0x0   0x01               DC8 1
+
+   \                                 In section .data, align 4
+   \   __absolute SpiDriver<spi2> spi2Transceiver
+   \                     spi2Transceiver:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x17   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x2E   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x45   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x5C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x73   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x8A   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xA1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xB8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xCF   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xE6   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xFD   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x114   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x12B   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x142   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x159   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x170   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x187   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x190   0x0000'0001        DC32 1, 1
+   \              0x0000'0001  
+   \      0x198   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \      0x19C   0x0000'0000        DC32 0, 0
+   \              0x0000'0000  
+
+   \                                 In section .data, align 4
+   \   __absolute SpiDriver<spi1> spi1Transceiver
+   \                     spi1Transceiver:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x17   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x2E   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x45   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x5C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x73   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x8A   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xA1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xB8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xCF   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xE6   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0xFD   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x114   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x12B   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x142   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x159   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x170   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x187   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \      0x190   0x0000'0001        DC32 1, 1
+   \              0x0000'0001  
+   \      0x198   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \      0x19C   0x0000'0000        DC32 0, 0
+   \              0x0000'0000  
+     22          
+     23          extern "C" void __iar_program_start( void );
+     24          extern "C" void xPortPendSVHandler(void);
+     25          
+     26          
+     27          class DummyModule
+     28          {
+     29            public:
+     30              static void handler();
+     31          };
+     32          
+     33          using tIntFunct = void(*)();
+     34          //cstat !MISRAC++2008-9-5-1
+     35          using tIntVectItem = union {tIntFunct __fun; void * __ptr;};
+     36          
+     37          // The vector table is normally located at address 0.
+     38          // When debugging in RAM, it can be located in RAM, aligned to at least 2^6.
+     39          // If you need to define interrupt service routines,
+     40          // make a copy of this file and include it in your project.
+     41          // The name "__vector_table" has special meaning for C-SPY:
+     42          // it is where the SP start value is found, and the NVIC vector
+     43          // table register (VTOR) is initialized to this address if != 0.
+     44          
+     45          #pragma location = ".intvec"
+     46          //cstat !MISRAC++2008-0-1-4_b !MISRAC++2008-9-5-1
+
+   \                                 In section .intvec, align 4
+     47          extern "C" const tIntVectItem __vector_table[] =
+   \                     __vector_table:
+   \        0x0   0x....'....        DC32 SFE(CSTACK), __iar_program_start, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \              0x....'....  
+   \        0xC   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x14   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv, 0x0, 0x0
+   \              0x....'....  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \       0x24   0x0000'0000        DC32 0x0, 0x0, _ZN9OsWrapper4Rtos18HandleSvcInterruptEv
+   \              0x0000'0000  
+   \              0x....'....  
+   \       0x30   0x....'....        DC32 _ZN11DummyModule7handlerEv, 0x0, xPortPendSVHandler
+   \              0x0000'0000  
+   \              0x....'....  
+   \       0x3C   0x....'....        DC32 _ZN9OsWrapper4Rtos22HandleSysTickInterruptEv
+   \       0x40   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x48   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x50   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x58   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x60   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x68   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x70   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x78   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x80   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0x88   0x....'....        DC32 _ZN11DummyModule7handlerEv, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \       0x9C   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0xA4   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0xAC   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0xB4   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0xBC   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0xC4   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \       0xCC   0x....'....        DC32 _ZN3SPII4SPI1L_Z15spi1TransceiverEE19SpiInterruptHandlerEv
+   \       0xD0   0x....'....        DC32 _ZN3SPII4SPI2L_Z15spi2TransceiverEE19SpiInterruptHandlerEv
+   \       0xD4   0x....'....        DC32 _ZN11DummyModule7handlerEv
+   \       0xD8   0x....'....        DC32 _ZN5USARTI6USART2L_Z20bluetoothTransceiverEE21UsartInterruptHandlerEv
+   \       0xDC   0x0000'0000        DC32 0x0, _ZN13IrqController22HandleIrqExtiLine15_10Ev
+   \              0x....'....  
+   \       0xE4   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv, 0x0, 0x0
+   \              0x....'....  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \       0xF4   0x0000'0000        DC32 0x0, 0x0, _ZN11DummyModule7handlerEv, 0x0
+   \              0x0000'0000  
+   \              0x....'....  
+   \              0x0000'0000  
+   \      0x104   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \      0x10C   0x....'....        DC32 _ZN11DummyModule7handlerEv, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \      0x120   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \      0x128   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \      0x130   0x....'....        DC32 _ZN11DummyModule7handlerEv, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \      0x14C   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \      0x154   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \      0x15C   0x....'....        DC32 _ZN11DummyModule7handlerEv, _ZN11DummyModule7handlerEv
+   \              0x....'....  
+   \      0x164   0x....'....        DC32 _ZN11DummyModule7handlerEv, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \      0x184   0x....'....        DC32 _ZN11DummyModule7handlerEv, 0x0, 0x0, _ZN11DummyModule7handlerEv
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x....'....  
+   \      0x194   0x....'....        DC32 _ZN11DummyModule7handlerEv
+     48          {
+     49            { .__ptr = __sfe( "CSTACK" ) },
+     50            __iar_program_start,
+     51          
+     52            DummyModule::handler,
+     53            DummyModule::handler,
+     54            DummyModule::handler,
+     55            DummyModule::handler,
+     56            DummyModule::handler,
+     57            0,
+     58            0,
+     59            0,
+     60            0,
+     61            OsWrapper::Rtos::HandleSvcInterrupt,
+     62            DummyModule::handler,
+     63            0,
+     64            xPortPendSVHandler,
+     65            OsWrapper::Rtos::HandleSysTickInterrupt,
+     66            //External Interrupts
+     67            DummyModule::handler,         //Window Watchdog
+     68            DummyModule::handler,         //PVD through EXTI Line detect/EXTI16
+     69            DummyModule::handler,         //Tamper and Time Stamp/EXTI21 
+     70            DummyModule::handler,         //RTC Wakeup/EXTI22 
+     71            DummyModule::handler,         //FLASH
+     72            DummyModule::handler,         //RCC
+     73            DummyModule::handler,         //EXTI Line 0
+     74            DummyModule::handler,         //EXTI Line 1
+     75            DummyModule::handler,         //EXTI Line 2
+     76            DummyModule::handler,         //EXTI Line 3
+     77            DummyModule::handler,         //EXTI Line 4
+     78            DummyModule::handler,         //DMA1 Stream 0
+     79            DummyModule::handler,         //DMA1 Stream 1
+     80            DummyModule::handler,         //DMA1 Stream 2
+     81            DummyModule::handler,         //DMA1 Stream 3
+     82            DummyModule::handler,         //DMA1 Stream 4
+     83            DummyModule::handler,         //DMA1 Stream 5
+     84            DummyModule::handler,         //DMA1 Stream 6
+     85            DummyModule::handler,         //ADC1
+     86            0,                            //USB High Priority
+     87            0,                            //USB Low  Priority
+     88            0,                            //DAC
+     89            0,                            //COMP through EXTI Line
+     90            DummyModule::handler,         //EXTI Line 9..5
+     91            DummyModule::handler,         //TIM9/TIM1 Break interrupt 
+     92            DummyModule::handler,         //TIM10/TIM1 Update interrupt
+     93            DummyModule::handler,         //TIM11/TIM1 Trigger/Commutation interrupts
+     94            DummyModule::handler,		//TIM1 Capture Compare interrupt
+     95            DummyModule::handler,         //TIM2  	
+     96            DummyModule::handler,         //TIM3
+     97            DummyModule::handler,         //TIM4
+     98            DummyModule::handler,         //I2C1 Event
+     99            DummyModule::handler,         //I2C1 Error
+    100            DummyModule::handler,         //I2C2 Event
+    101            DummyModule::handler,         //I2C2 Error
+    102            spi1::SpiInterruptHandler,         //SPI1
+    103            spi2::SpiInterruptHandler,         //SPI2
+    104            DummyModule::handler,         //USART1
+    105            usart2::UsartInterruptHandler,//USART2
+    106            0,
+    107            IrqController::HandleIrqExtiLine15_10,         //EXTI Line 15..10
+    108            DummyModule::handler,         //EXTI Line 17 interrupt / RTC Alarms (A and B) through EXTI line interrupt
+    109            DummyModule::handler,         //EXTI Line 18 interrupt / USB On-The-Go  FS Wakeup through EXTI line interrupt
+    110            0,				//TIM6
+    111            0,				//TIM7  f0
+    112            0,
+    113            0,
+    114            DummyModule::handler,         //DMA1 Stream 7 global interrupt fc
+    115            0,
+    116            DummyModule::handler,	        //SDIO global interrupt
+    117            DummyModule::handler,	        //TIM5 global interrupt
+    118            DummyModule::handler,	        //SPI3 global interrupt
+    119            0,			        // 110
+    120            0,
+    121            0,
+    122            0,
+    123            DummyModule::handler,		//DMA2 Stream0 global interrupt 120
+    124            DummyModule::handler,		//DMA2 Stream1 global interrupt
+    125            DummyModule::handler,		//DMA2 Stream2 global interrupt
+    126            DummyModule::handler,		//DMA2 Stream3 global interrupt
+    127            DummyModule::handler,		//DMA2 Stream4 global interrupt 130
+    128            0,
+    129            0,
+    130            0,
+    131            0,
+    132            0,
+    133            0,
+    134            DummyModule::handler,		//USB On The Go FS global interrupt, 14C
+    135            DummyModule::handler,		//DMA2 Stream5 global interrupt
+    136            DummyModule::handler,		//DMA2 Stream6 global interrupt
+    137            DummyModule::handler,		//DMA2 Stream7 global interrupt
+    138            DummyModule::handler,				//USART6 15C
+    139            DummyModule::handler,         //I2C3 Event
+    140            DummyModule::handler,         //I2C3 Error 164
+    141            0,
+    142            0,
+    143            0,
+    144            0,
+    145            0,
+    146            0,
+    147            0,
+    148            DummyModule::handler,		//FPU 184
+    149            0,
+    150            0,
+    151            DummyModule::handler,		//SPI 4 global interrupt
+    152            DummyModule::handler		//SPI 5 global interrupt
+    153          };
+    154          
+
+   \                                 In section .text, align 2, keep-with-next
+    155          void DummyModule::handler()   { for(;;) {} } ;
+   \                     _ZN11DummyModule7handlerEv: (+1)
+   \                     ??handler_0: (+1)
+   \        0x0   0xE7FE             B.N      ??handler_0
+    156          
+    157          extern "C" void __cmain( void );
+    158          extern "C" __weak void __iar_init_core( void );
+    159          extern "C" __weak void __iar_init_vfp( void );
+    160          
+    161          #pragma required=__vector_table
+
+   \                                 In section .text, align 2, keep-with-next
+    162          void __iar_program_start( void )
+    163          {
+   \                     __iar_program_start: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    164            __iar_init_core();
+   \        0x2   0x....'....        BL       __iar_init_core
+    165            __iar_init_vfp();
+   \        0x6   0x....'....        BL       __iar_init_vfp
+    166            __cmain();
+   \        0xA   0x....'....        BL       __cmain
+    167          }
+   \        0xE   0xBD01             POP      {R0,PC}          ;; return
+   \       0x10                      REQUIRE __vector_table
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \        0x0   0x....'....        DC32     _ZGV20bluetoothTransceiver
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \        0x0   0x....'....        DC32     bluetoothTransceiver
+    168          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   DummyModule::handler()
+       0   FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+       0   FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+       0   FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+       0   FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+       0   FieldValueBase<SPI1_SR_BSY_Values<SPI1::SR, 7U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 0U>::IsSet<ReadMode, void>()
+       0   FieldValueBase<SPI1_SR_RXNE_Values<SPI1::SR, 0U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+       0   FieldValueBase<SPI1_SR_TXE_Values<SPI1::SR, 1U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+       0   FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+       0   FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+       0   FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+       0   FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+       0   FieldValueBase<SPI2_SR_BSY_Values<SPI2::SR, 7U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 0U>::IsSet<ReadMode, void>()
+       0   FieldValueBase<SPI2_SR_RXNE_Values<SPI2::SR, 0U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+       0   FieldValueBase<SPI2_SR_TXE_Values<SPI2::SR, 1U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+       0   FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+       0   FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 1U>::IsSet<ReadWriteMode, void>()
+       0   FieldValueBase<USART2_CR1_TXEIE_Values<USART2::CR1, 7U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+       0   FieldValueBase<USART2_SR_RXNE_Values<USART2::SR, 5U, 1U, ReadWriteMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadWriteMode, void>()
+       0   FieldValueBase<USART2_SR_TXE_Values<USART2::SR, 7U, 1U, ReadMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadMode, void>()
+       8   OsWrapper::Rtos::HandleSvcInterrupt()
+         8   -> OsWrapper::RtosWrapper::wHandleSvcInterrupt()
+       8   OsWrapper::Rtos::HandleSysTickInterrupt()
+         8   -> OsWrapper::RtosWrapper::wHandleSysTickInterrupt()
+       8   OsWrapper::RtosWrapper::wHandleSvcInterrupt()
+         8   -> OsWrapper::vPortSVCHandler
+       8   OsWrapper::RtosWrapper::wHandleSysTickInterrupt()
+         8   -> OsWrapper::xPortSysTickHandler
+       0   RegisterBase<1073756172U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+       0   RegisterBase<1073756172U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+       0   RegisterBase<1073759236U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+       0   RegisterBase<1073759236U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+       0   RegisterBase<1073819660U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+       0   RegisterBase<1073819660U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+       8   SPI<SPI1, spi1Transceiver>::ReadByte()
+         8   -> RegisterBase<1073819660U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+       8   SPI<SPI1, spi1Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+         8   -> FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+       8   SPI<SPI1, spi1Transceiver>::SendByte(char)
+         8   -> RegisterBase<1073819660U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+       8   SPI<SPI1, spi1Transceiver>::SpiInterruptHandler()
+         8   -> FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+         8   -> FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+         8   -> FieldValueBase<SPI1_SR_RXNE_Values<SPI1::SR, 0U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+         8   -> FieldValueBase<SPI1_SR_TXE_Values<SPI1::SR, 1U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+         8   -> SpiDriver<spi1>::OnNextByteReceive()
+         8   -> SpiDriver<spi1>::OnNextByteTransmite()
+       8   SPI<SPI1, spi1Transceiver>::TransmiteBufEmptyInterruptDisable()
+         8   -> FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+       8   SPI<SPI1, spi1Transceiver>::TransmittionCompleted()
+         8   -> FieldValueBase<SPI1_SR_BSY_Values<SPI1::SR, 7U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 0U>::IsSet<ReadMode, void>()
+       8   SPI<SPI2, spi2Transceiver>::ReadByte()
+         8   -> RegisterBase<1073756172U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+       8   SPI<SPI2, spi2Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+         8   -> FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+       8   SPI<SPI2, spi2Transceiver>::SendByte(char)
+         8   -> RegisterBase<1073756172U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+       8   SPI<SPI2, spi2Transceiver>::SpiInterruptHandler()
+         8   -> FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+         8   -> FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+         8   -> FieldValueBase<SPI2_SR_RXNE_Values<SPI2::SR, 0U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+         8   -> FieldValueBase<SPI2_SR_TXE_Values<SPI2::SR, 1U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+         8   -> SpiDriver<spi2>::OnNextByteReceive()
+         8   -> SpiDriver<spi2>::OnNextByteTransmite()
+       8   SPI<SPI2, spi2Transceiver>::TransmiteBufEmptyInterruptDisable()
+         8   -> FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+       8   SPI<SPI2, spi2Transceiver>::TransmittionCompleted()
+         8   -> FieldValueBase<SPI2_SR_BSY_Values<SPI2::SR, 7U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 0U>::IsSet<ReadMode, void>()
+      16   SpiDriver<spi1>::OnNextByteReceive()
+        16   -> SPI<SPI1, spi1Transceiver>::ReadByte()
+        16   -> SPI<SPI1, spi1Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+        16   -> std::array<char, 200U>::operator[](size_t)
+      16   SpiDriver<spi1>::OnNextByteTransmite()
+        16   -> SPI<SPI1, spi1Transceiver>::SendByte(char)
+        16   -> SPI<SPI1, spi1Transceiver>::TransmiteBufEmptyInterruptDisable()
+        16   -> SPI<SPI1, spi1Transceiver>::TransmittionCompleted()
+        16   -> std::array<char, 200U>::operator[](size_t)
+      16   SpiDriver<spi2>::OnNextByteReceive()
+        16   -> SPI<SPI2, spi2Transceiver>::ReadByte()
+        16   -> SPI<SPI2, spi2Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+        16   -> std::array<char, 200U>::operator[](size_t)
+      16   SpiDriver<spi2>::OnNextByteTransmite()
+        16   -> SPI<SPI2, spi2Transceiver>::SendByte(char)
+        16   -> SPI<SPI2, spi2Transceiver>::TransmiteBufEmptyInterruptDisable()
+        16   -> SPI<SPI2, spi2Transceiver>::TransmittionCompleted()
+        16   -> std::array<char, 200U>::operator[](size_t)
+       8   USART<USART2, bluetoothTransceiver>::ReadByte()
+         8   -> RegisterBase<1073759236U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+       8   USART<USART2, bluetoothTransceiver>::SendByte(uint8_t)
+         8   -> RegisterBase<1073759236U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+       8   USART<USART2, bluetoothTransceiver>::TransmiteBufEmptyInterruptDisable()
+         8   -> FieldValueBase<USART2_CR1_TXEIE_Values<USART2::CR1, 7U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+       8   USART<USART2, bluetoothTransceiver>::TransmiteDisable()
+         8   -> FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+       8   USART<USART2, bluetoothTransceiver>::UsartInterruptHandler()
+         8   -> FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 1U>::IsSet<ReadWriteMode, void>()
+         8   -> FieldValueBase<USART2_SR_RXNE_Values<USART2::SR, 5U, 1U, ReadWriteMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadWriteMode, void>()
+         8   -> FieldValueBase<USART2_SR_TXE_Values<USART2::SR, 7U, 1U, ReadMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadMode, void>()
+         8   -> usartDriver<usart2>::OnNextByteReceive()
+         8   -> usartDriver<usart2>::OnNextByteTransmite()
+       8   __iar_program_start
+         8   -> __cmain
+         8   -> __iar_init_core
+         8   -> __iar_init_vfp
+       8   __sti__routine()
+         8   -> usartDriver<usart2>::usartDriver()
+       0   std::array<char, 1024U>::operator[](size_t)
+       0   std::array<char, 200U>::operator[](size_t)
+      16   usartDriver<usart2>::OnNextByteReceive()
+        16   -> USART<USART2, bluetoothTransceiver>::ReadByte()
+        16   -> std::array<char, 1024U>::operator[](size_t)
+       8   usartDriver<usart2>::OnNextByteTransmite()
+         8   -> USART<USART2, bluetoothTransceiver>::SendByte(uint8_t)
+         8   -> USART<USART2, bluetoothTransceiver>::TransmiteBufEmptyInterruptDisable()
+         8   -> USART<USART2, bluetoothTransceiver>::TransmiteDisable()
+         8   -> std::array<char, 1024U>::operator[](size_t)
+       0   usartDriver<usart2>::usartDriver()
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       2  DummyModule::handler()
+      16  FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+      16  FieldValueBase<SPI1_CR2_RXNEIE_Values<SPI1::CR2, 6U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+      16  FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 0U>::Set<ReadWriteMode, void>()
+      16  FieldValueBase<SPI1_CR2_TXEIE_Values<SPI1::CR2, 7U, 1U, ReadWriteMode, SPI1::SPI1CR2Base>, SPI1::SPI1CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+      24  FieldValueBase<SPI1_SR_BSY_Values<SPI1::SR, 7U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 0U>::IsSet<ReadMode, void>()
+      16  FieldValueBase<SPI1_SR_RXNE_Values<SPI1::SR, 0U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+      16  FieldValueBase<SPI1_SR_TXE_Values<SPI1::SR, 1U, 1U, ReadMode, SPI1::SPI1SRBase>, SPI1::SPI1SRBase, 1U>::IsSet<ReadMode, void>()
+      16  FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+      16  FieldValueBase<SPI2_CR2_RXNEIE_Values<SPI2::CR2, 6U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+      16  FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 0U>::Set<ReadWriteMode, void>()
+      16  FieldValueBase<SPI2_CR2_TXEIE_Values<SPI2::CR2, 7U, 1U, ReadWriteMode, SPI2::SPI2CR2Base>, SPI2::SPI2CR2Base, 1U>::IsSet<ReadWriteMode, void>()
+      24  FieldValueBase<SPI2_SR_BSY_Values<SPI2::SR, 7U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 0U>::IsSet<ReadMode, void>()
+      16  FieldValueBase<SPI2_SR_RXNE_Values<SPI2::SR, 0U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+      16  FieldValueBase<SPI2_SR_TXE_Values<SPI2::SR, 1U, 1U, ReadMode, SPI2::SPI2SRBase>, SPI2::SPI2SRBase, 1U>::IsSet<ReadMode, void>()
+      16  FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+      16  FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, 3U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 1U>::IsSet<ReadWriteMode, void>()
+      16  FieldValueBase<USART2_CR1_TXEIE_Values<USART2::CR1, 7U, 1U, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, 0U>::Set<ReadWriteMode, void>()
+      16  FieldValueBase<USART2_SR_RXNE_Values<USART2::SR, 5U, 1U, ReadWriteMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadWriteMode, void>()
+      16  FieldValueBase<USART2_SR_TXE_Values<USART2::SR, 7U, 1U, ReadMode, USART2::USART2SRBase>, USART2::USART2SRBase, 1U>::IsSet<ReadMode, void>()
+       8  OsWrapper::Rtos::HandleSvcInterrupt()
+       8  OsWrapper::Rtos::HandleSysTickInterrupt()
+       8  OsWrapper::RtosWrapper::wHandleSvcInterrupt()
+       8  OsWrapper::RtosWrapper::wHandleSysTickInterrupt()
+      12  RegisterBase<1073756172U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+      12  RegisterBase<1073756172U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+      12  RegisterBase<1073759236U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+      12  RegisterBase<1073759236U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+      12  RegisterBase<1073819660U, 32U, ReadWriteMode>::Get<ReadWriteMode, void>()
+      12  RegisterBase<1073819660U, 32U, ReadWriteMode>::Write<ReadWriteMode, void>(uint32_t)
+      10  SPI<SPI1, spi1Transceiver>::ReadByte()
+       8  SPI<SPI1, spi1Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+      14  SPI<SPI1, spi1Transceiver>::SendByte(char)
+      52  SPI<SPI1, spi1Transceiver>::SpiInterruptHandler()
+       8  SPI<SPI1, spi1Transceiver>::TransmiteBufEmptyInterruptDisable()
+       8  SPI<SPI1, spi1Transceiver>::TransmittionCompleted()
+      10  SPI<SPI2, spi2Transceiver>::ReadByte()
+       8  SPI<SPI2, spi2Transceiver>::ReceiveBufNotEmptyInterruptDisable()
+      14  SPI<SPI2, spi2Transceiver>::SendByte(char)
+      52  SPI<SPI2, spi2Transceiver>::SpiInterruptHandler()
+       8  SPI<SPI2, spi2Transceiver>::TransmiteBufEmptyInterruptDisable()
+       8  SPI<SPI2, spi2Transceiver>::TransmittionCompleted()
+      92  SpiDriver<spi1>::OnNextByteReceive()
+     122  SpiDriver<spi1>::OnNextByteTransmite()
+      92  SpiDriver<spi2>::OnNextByteReceive()
+     122  SpiDriver<spi2>::OnNextByteTransmite()
+      10  USART<USART2, bluetoothTransceiver>::ReadByte()
+      14  USART<USART2, bluetoothTransceiver>::SendByte(uint8_t)
+       8  USART<USART2, bluetoothTransceiver>::TransmiteBufEmptyInterruptDisable()
+       8  USART<USART2, bluetoothTransceiver>::TransmiteDisable()
+      44  USART<USART2, bluetoothTransceiver>::UsartInterruptHandler()
+      16  __iar_program_start
+      22  __sti__routine()
+     408  __vector_table
+    2068  bluetoothTransceiver
+       1  isfirst
+       1  isfirst
+     420  spi1Transceiver
+     420  spi2Transceiver
+       4  std::array<char, 1024U>::operator[](size_t)
+       4  std::array<char, 200U>::operator[](size_t)
+       1  std::chrono::steady_clock::is_steady
+       1  std::chrono::system_clock::is_monotonic
+       1  std::chrono::system_clock::is_steady
+     102  usartDriver<usart2>::OnNextByteReceive()
+      84  usartDriver<usart2>::OnNextByteTransmite()
+      44  usartDriver<usart2>::usartDriver()
+      29  -- Other
+
+ 
+ 2'069 bytes in section .bss
+   842 bytes in section .data
+     4 bytes in section .init_array
+   408 bytes in section .intvec
+    27 bytes in section .rodata
+ 1'422 bytes in section .text
+ 
+  52 bytes of CODE  memory (+ 1'374 bytes shared)
+ 408 bytes of CONST memory (+    27 bytes shared)
+   0 bytes of DATA  memory (+ 2'911 bytes shared)
+
+Errors: none
+Warnings: 1
